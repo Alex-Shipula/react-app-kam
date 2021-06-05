@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import ImgMediaCard from './Cart/cart';
+import Header from './Components/Header/Header';
+import Main from './Components/Main/Main';
+import Navbar from './Components/Navbar/Navbar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Navbar />
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 
